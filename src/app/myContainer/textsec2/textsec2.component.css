@@ -1,0 +1,36 @@
+.texsec {
+    width: 45%;
+    background: #fff;
+    margin: 10px 5px;
+    padding: 5px;
+    float: right;
+}
+
+.heading-red {
+    color: #52a3fd;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.texsec p {
+    color: #858585;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.btn-red {
+    background: #52a3fd;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    float: right;
+}
+
+.btn-red:hover {
+    background: black;
+}
+
+.clear {
+    clear: both;
+}
