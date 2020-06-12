@@ -10,6 +10,7 @@ import { Textsec1Component } from './myContainer/textsec1/textsec1.component';
 import { Textsec2Component } from './myContainer/textsec2/textsec2.component';
 import { DatabindingComponent } from './myContainer/databinding/databinding.component';
 import { ClassStyleComponent } from './myContainer/class-style/class-style.component';
+import { EventbindComponent } from './myContainer/eventbind/eventbind.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ClassStyleComponent } from './myContainer/class-style/class-style.compo
     Textsec1Component,
     Textsec2Component,
     DatabindingComponent,
-    ClassStyleComponent
+    ClassStyleComponent,
+    EventbindComponent
   ],
   imports: [
     BrowserModule,
