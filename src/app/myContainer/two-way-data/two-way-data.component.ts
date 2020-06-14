@@ -14,4 +14,6 @@ export class TwoWayDataComponent implements OnInit {
 
   uname:string = "tbnbbree";
 
+  isCollapsed = false;
+
 }

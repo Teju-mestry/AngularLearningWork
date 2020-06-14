@@ -13,7 +13,11 @@ import { DatabindingComponent } from './myContainer/databinding/databinding.comp
 import { ClassStyleComponent } from './myContainer/class-style/class-style.component';
 import { EventbindComponent } from './myContainer/eventbind/eventbind.component';
 import { TwoWayDataComponent } from './myContainer/two-way-data/two-way-data.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+//NGX-BOOTSTRAP
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 
 @NgModule({
@@ -32,7 +36,11 @@ import { TwoWayDataComponent } from './myContainer/two-way-data/two-way-data.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot(),
+    BsDatepickerModule.forRoot()
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
