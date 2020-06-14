@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule} from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,13 +16,26 @@ import { EventbindComponent } from './myContainer/eventbind/eventbind.component'
 import { TwoWayDataComponent } from './myContainer/two-way-data/two-way-data.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
 //NGX-BOOTSTRAP
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+
 import { NgifComponent } from './myContainer/ngif/ngif.component';
 import { NgswitchComponent } from './myContainer/ngswitch/ngswitch.component';
 import { NgforComponent } from './myContainer/ngfor/ngfor.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProductsComponent } from './products/products.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
+
+const appRoutes:Routes = [
+  {path:'',component: HomeComponent},
+  {path:'about',component:AboutusComponent},
+  {path:'products',component:ProductsComponent},
+  {path:'contact',component:ContactComponent}
+]
 
 @NgModule({
   declarations: [
@@ -37,7 +51,11 @@ import { NgforComponent } from './myContainer/ngfor/ngfor.component';
     TwoWayDataComponent,
     NgifComponent,
     NgswitchComponent,
-    NgforComponent
+    NgforComponent,
+    HomeComponent,
+    ContactComponent,
+    ProductsComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +63,8 @@ import { NgforComponent } from './myContainer/ngfor/ngfor.component';
     FormsModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    RouterModule.forRoot(appRoutes)
     
   ],
   providers: [],

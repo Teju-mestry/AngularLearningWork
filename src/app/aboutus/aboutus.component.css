@@ -1,0 +1,9 @@
+* {
+    background: rgb(248, 248, 144);
+}
+
+.container {
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5%;
+}
