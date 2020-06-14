@@ -1,4 +1,4 @@
-<table class="table">
+<!-- <table class="table">
     <thead class="thead-dark">
         <tr>
             <th>Sr No.</th>
@@ -15,6 +15,35 @@
             <td>{{mypro.proname}}</td>
             <td>{{mypro.proid}}</td>
             <td>{{mypro.proprice}}</td>
+        </tr>
+    </tbody>
+</table> -->
+<br>
+<div class="row">
+    <div class="col-md-3">
+        <input type="text" name="" class="form-control" #uname placeholder="User name">
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-success" (click)="createUser(uname)">Create user</button>
+    </div>
+</div>
+
+<br>
+
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                Username
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>
+                {{user.name}}
+            </td>
         </tr>
     </tbody>
 </table>
