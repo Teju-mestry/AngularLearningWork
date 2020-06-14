@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { NgifComponent } from './myContainer/ngif/ngif.component';
+import { NgswitchComponent } from './myContainer/ngswitch/ngswitch.component';
+import { NgforComponent } from './myContainer/ngfor/ngfor.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { NgifComponent } from './myContainer/ngif/ngif.component';
     ClassStyleComponent,
     EventbindComponent,
     TwoWayDataComponent,
-    NgifComponent
+    NgifComponent,
+    NgswitchComponent,
+    NgforComponent
   ],
   imports: [
     BrowserModule,
