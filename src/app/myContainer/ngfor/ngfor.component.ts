@@ -26,4 +26,12 @@ export class NgforComponent implements OnInit {
     name:uname.value
     })
   }
+
+  removeUser(){
+    this.users.splice(this.users.length-1);
+  }
+
+  removeItem(item){
+    this.users.splice(item,1);
+  }
 }

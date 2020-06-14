@@ -26,6 +26,9 @@
     <div class="col-md-3">
         <button class="btn btn-success" (click)="createUser(uname)">Create user</button>
     </div>
+    <div class="col-md-3">
+        <button class="btn btn-danger" (click)="removeUser()">Remove</button>
+    </div>
 </div>
 
 <br>
@@ -37,12 +40,18 @@
             <th>
                 Username
             </th>
+            <th>
+                Remove Item
+            </th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let user of users">
+        <tr *ngFor="let user of users;index as i">
             <td>
                 {{user.name}}
+            </td>
+            <td>
+                <button class="btn btn-danger" (click)="removeItem(i)">Remove</button>
             </td>
         </tr>
     </tbody>
