@@ -12,4 +12,10 @@ export class NgifComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isValid:boolean = false;
+
+  onCreate(){
+    this.isValid = true;
+  }
+
 }
