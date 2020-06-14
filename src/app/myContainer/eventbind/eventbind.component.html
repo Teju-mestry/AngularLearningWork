@@ -8,9 +8,13 @@
 
 <!-- <input type="text" value="myinputtext" (click)="onClickInput($event)"> -->
 
-<button value="Laptop" (click)="addToCart1($event)">Laptop</button>
+<!-- <button value="Laptop" (click)="addToCart1($event)">Laptop</button>
 <button value="Tv " (click)="addToCart1($event)">Tv</button>
 <button value="Washing machine" (click)="addToCart1($event)">Washing machine</button>
 <br><br>
 
-<p>{{msg1}}</p>
+<p>{{msg1}}</p> -->
+
+<input #myInfo type="text" value="Mestry" name="Tejashree">
+
+<button (click)="getMyInfo(myInfo)">Get info</button>

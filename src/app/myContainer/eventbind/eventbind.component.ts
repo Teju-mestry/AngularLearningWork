@@ -28,5 +28,8 @@ export class EventbindComponent implements OnInit {
     this.msg1 = event.target.value + " added to cart";
   }
 
+  getMyInfo(my){
+    console.log(my.name);
+  }
 
 }
