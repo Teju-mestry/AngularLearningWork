@@ -30,13 +30,23 @@ import { ProductsComponent } from './products/products.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { LaptopComponent } from './products/laptop/laptop.component';
+import { WashingMachineComponent } from './products/washing-machine/washing-machine.component';
+import { MobileComponent } from './products/mobile/mobile.component';
+import { TelevisionComponent } from './products/television/television.component';
 
 
 const appRoutes:Routes = [
   {path:'',redirectTo:'login' , pathMatch:'full'},
   {path:'home',component: HomeComponent},
   {path:'about',component:AboutusComponent},
-  {path:'products',component:ProductsComponent},
+  {path:'products',component:ProductsComponent, children:[
+    // {path:'',component:ProductsComponent},
+    {path:'laptop',component:LaptopComponent},
+    {path:'mobile',component:MobileComponent},
+    {path:'television',component:TelevisionComponent},
+    {path:'washing-machine', component:WashingMachineComponent}
+  ]},
   {path:'login',component:LoginComponent},
   {path:'contact',component:ContactComponent},
   {path:'**',component:NotfoundComponent}
@@ -62,7 +72,11 @@ const appRoutes:Routes = [
     ProductsComponent,
     AboutusComponent,
     LoginComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    LaptopComponent,
+    WashingMachineComponent,
+    MobileComponent,
+    TelevisionComponent
   ],
   imports: [
     BrowserModule,
