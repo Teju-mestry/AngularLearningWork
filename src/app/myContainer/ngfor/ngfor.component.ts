@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ngfor',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgforComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -25,6 +26,12 @@ export class NgforComponent implements OnInit {
     this.users.push({
     name:uname.value
     })
+
+    if(this.users.length>3){
+      // alert("more");
+      this.router.navigate(['products']);
+
+    }
   }
 
   removeUser(){
